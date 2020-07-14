@@ -10,9 +10,10 @@ import Spinner from '../../components/UI/Spinner/Spinner'
 const orders = props => {
 
     //use effect replaces componentDidMount. Using empty array [] ensures that it only runs when component mounts
+    const {onFetchOrders} = props;
     useEffect(() => {
-        props.onFetchOrders(props.token, props.userId);
-    }, [])
+        onFetchOrders(props.token, props.userId);
+    }, [onFetchOrders])
 
   
     let orders = <Spinner/>

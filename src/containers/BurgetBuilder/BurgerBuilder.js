@@ -92,7 +92,7 @@ const burgerBuilder = props => {
                         ingredientRemoved={onIngredientRemoved} 
                         disabled={disabledInfo}
                         ordered={purchaseHandler}
-                        purchasable={updatePurchaseState(props.ings)}
+                        purchasable={updatePurchaseState(ings)}
                         isAuth={isAuthenticated}
                         price={price}/>
             </Aux>

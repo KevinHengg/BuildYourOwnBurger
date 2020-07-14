@@ -16,8 +16,8 @@ const checkout = props => {
 
     
     let summary = <Redirect to="/"/>
-    if ( this.props.ings ) {
-        const purchasedRedirect = this.props.purchased ? <Redirect to ="/" /> : null
+    if ( props.ings ) {
+        const purchasedRedirect = props.purchased ? <Redirect to ="/" /> : null
         summary = (
             <div>
                 {purchasedRedirect}
